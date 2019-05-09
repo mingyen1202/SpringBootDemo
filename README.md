@@ -16,3 +16,8 @@
     --server.port = 8080
     ```
  
+### enable tomcat web support
+1. add dependencies (from starter to start-web)
+    ```
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    ```
