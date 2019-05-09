@@ -21,3 +21,13 @@
     ```
     implementation 'org.springframework.boot:spring-boot-starter-web'
     ```
+2. add SLF4J Logger
+    ```
+    private static final Logger LOGGER = LoggerFactory.getLogger(.class);
+    LOGGER.info("console");
+    ```
+3. add GET and POST Method
+    ```
+    @RequestMapping(value = "/", method = RequestMethod.GET)
+    @RequestMapping(value = "/", method = RequestMethod.POST)
+    ```
