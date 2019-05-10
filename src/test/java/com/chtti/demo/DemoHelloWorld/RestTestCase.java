@@ -48,5 +48,8 @@ public class RestTestCase {
         restTemplate = new TestRestTemplate();
         ResponseEntity<Lesson> res = restTemplate.getForEntity(base.toString() + "ep3", Lesson.class);
         assertEquals(HttpStatus.OK, res.getStatusCode());
+        Lesson lesson = res.getBody();
+        assertTrue(lesson.getInstructor().equals("MarkHo"));
+        assertEquals(lesson.getDuration(), 28);
     }
 }
