@@ -8,7 +8,6 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@EnableAutoConfiguration
 public class RootController {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(RestController.class);
@@ -25,4 +24,24 @@ public class RootController {
         return "[POST] Hi Marcus from Spring boot";
     }
 
+    @RequestMapping(value = "/ep1", method = RequestMethod.GET)
+    public String ep1() {
+        LOGGER.info("GET console");
+        return "ep1";
+    }
+
+    @RequestMapping(value = "/ep2", method = RequestMethod.GET)
+    public String ep2() {
+        LOGGER.info("GET console");
+        return "ep2";
+    }
+
+    @RequestMapping(value = "/ep3", method = RequestMethod.GET)
+    public Lesson ep3() {
+        Lesson lesson = new Lesson("Java", "MarkHo", 28);
+        lesson.addSchedule("Ape-1");
+        lesson.addSchedule("Ape-2");
+        lesson.addSchedule("Ape-3");
+        return lesson;
+    }
 }
