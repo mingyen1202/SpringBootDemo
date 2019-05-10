@@ -1,16 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <title>Success</title>
 </head>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-<script type="text/javascript">
+<script src="js/jquery.min.js"></script>
+<script th:inline="javascript">
     $(document).ready(function(){
-        var msg = '[[${msg}]]';
+        var msg = /*[[${msg}]]*/ 'default';
         $("#messageid").text(msg);
     });
-
 </script>
 <body>
 <h3>Success</h3>
