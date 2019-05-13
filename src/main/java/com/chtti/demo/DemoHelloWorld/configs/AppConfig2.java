@@ -7,8 +7,8 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 public class AppConfig2 {
-    @Bean(name = "mul")
-    Calculator calculator3() {
-        return new MulCalculator();
-    }
+//    @Bean(name = "mul")
+//    Calculator calculator3() {
+//        return new MulCalculator();
+//    }
 }
