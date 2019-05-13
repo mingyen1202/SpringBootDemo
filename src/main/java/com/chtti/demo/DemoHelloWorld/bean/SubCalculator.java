@@ -1,4 +1,6 @@
-package com.chtti.demo.DemoHelloWorld;
+package com.chtti.demo.DemoHelloWorld.bean;
+
+import com.chtti.demo.DemoHelloWorld.Calculator;
 
 public class SubCalculator implements Calculator {
     @Override

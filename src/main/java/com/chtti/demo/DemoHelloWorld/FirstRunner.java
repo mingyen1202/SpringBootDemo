@@ -27,6 +27,7 @@ public class FirstRunner implements CommandLineRunner {
     @Override
     public void run(String... args) throws Exception {
         LOGGER.info("First Runner start to run something");
+
 //        Calculator c1 = context.getBean(Calculator.class);
 //        Calculator c1 = context.getBean("add", Calculator.class);
         LOGGER.info(String.format("add c1=%d", c1.calc(50, 20)));

@@ -1,5 +1,6 @@
-package com.chtti.demo.DemoHelloWorld;
+package com.chtti.demo.DemoHelloWorld.controller;
 
+import com.chtti.demo.DemoHelloWorld.bean.Lesson;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.RequestMapping;

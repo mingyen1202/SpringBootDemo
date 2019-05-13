@@ -1,4 +1,4 @@
-package com.chtti.demo.DemoHelloWorld;
+package com.chtti.demo.DemoHelloWorld.bean;
 
 import java.util.ArrayList;
 import java.util.List;

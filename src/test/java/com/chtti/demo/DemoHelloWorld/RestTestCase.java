@@ -1,5 +1,6 @@
 package com.chtti.demo.DemoHelloWorld;
 
+import com.chtti.demo.DemoHelloWorld.bean.Lesson;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;

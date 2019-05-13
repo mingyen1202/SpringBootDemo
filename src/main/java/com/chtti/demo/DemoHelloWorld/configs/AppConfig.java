@@ -1,5 +1,8 @@
-package com.chtti.demo.DemoHelloWorld;
+package com.chtti.demo.DemoHelloWorld.configs;
 
+import com.chtti.demo.DemoHelloWorld.Calculator;
+import com.chtti.demo.DemoHelloWorld.bean.AddCalculator;
+import com.chtti.demo.DemoHelloWorld.bean.SubCalculator;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -15,10 +18,5 @@ public class AppConfig {
 //    @Bean
     Calculator calculator2() {
         return new SubCalculator();
-    }
-
-    @Bean(name = "mul")
-    Calculator calculator3() {
-        return new MulCalculator();
     }
 }
